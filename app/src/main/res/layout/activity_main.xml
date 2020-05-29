@@ -39,7 +39,7 @@
             app:layout_constraintTop_toBottomOf="@id/edt_search"
             app:layout_constraintStart_toStartOf="@id/imgv_back"
             />
-        <TableLayout
+        <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_item"
             android:layout_width="0dp"
             android:layout_height="41dp"
