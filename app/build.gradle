@@ -2,6 +2,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+compileJava.options.encoding = 'UTF-8'
+task.withType(JavaCompile){
+    options.encoding = 'UTF-8'
+}
+
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
