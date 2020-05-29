@@ -6,13 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
+<ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nav_view">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="wrap_content">
+
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline_left"
@@ -27,6 +33,25 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_end="23dp" />
+
+            <ImageView
+                android:id="@+id/btn_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_btn_logo"
+                app:layout_constraintStart_toStartOf="@id/guideline_left"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="24dp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/main_btn_search"
+                app:layout_constraintStart_toEndOf="@id/btn_main"
+                app:layout_constraintTop_toTopOf="@id/btn_main"
+                android:layout_marginLeft="5dp"/>
 
             <ImageView
                 android:id="@+id/img_bg"
@@ -213,7 +238,9 @@
                 app:layout_constraintTop_toTopOf="@+id/tv_point"
                 app:srcCompat="@drawable/main_point" />
 
+
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tab_container"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="@+id/imageView13"
@@ -256,11 +283,62 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/main_tab" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <ImageView
+                android:id="@+id/img_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_img_ad"
+                app:layout_constraintTop_toBottomOf="@id/tab_container"
+                app:layout_constraintStart_toStartOf="@id/guideline_left"
+                app:layout_constraintEnd_toEndOf="@id/guideline_right"
+                android:layout_marginTop="14dp"/>
+
+            <ImageView
+                android:id="@+id/img_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_btn_event"
+                app:layout_constraintTop_toBottomOf="@id/img_ad"
+                app:layout_constraintStart_toStartOf="@id/guideline_left"
+                app:layout_constraintEnd_toEndOf="@id/guideline_right"
+                android:layout_marginTop="7dp"/>
+
+            <ImageView
+                android:id="@+id/img_cafe_levelup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_btn_cafe_levelup"
+                app:layout_constraintTop_toBottomOf="@id/img_event"
+                app:layout_constraintStart_toStartOf="@id/guideline_left"
+                app:layout_constraintEnd_toEndOf="@id/guideline_right"
+                android:layout_marginTop="2dp"/>
+
+            <ImageView
+                android:id="@+id/img_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_btn_invite"
+                app:layout_constraintTop_toBottomOf="@id/img_cafe_levelup"
+                app:layout_constraintStart_toStartOf="@id/guideline_left"
+                app:layout_constraintEnd_toEndOf="@id/guideline_right"
+                android:layout_marginTop="2dp"/>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </ScrollView>
 
-
-
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bottom_navigation_border"
+        app:menu="@menu/navigation"
+        app:itemIconSize="63dp"
+        app:labelVisibilityMode="unlabeled"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

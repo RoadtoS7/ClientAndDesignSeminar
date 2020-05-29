@@ -16,5 +16,8 @@ class MainActivity : AppCompatActivity() {
         main_tab.setupWithViewPager(main_viewPager)
         main_tab.getTabAt(0)!!.setText("즐겨찾기")
         main_tab.getTabAt(1)!!.setText("전체 카테고리")
+
+        nav_view.itemIconTintList = null
+
     }
 }
