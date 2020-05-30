@@ -2,10 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
-compileJava.options.encoding = 'UTF-8'
-task.withType(JavaCompile){
-    options.encoding = 'UTF-8'
-}
+
 
 
 android {
@@ -44,4 +41,8 @@ dependencies {
 
     // material design
     implementation 'com.google.android.material:material:1.0.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 }
