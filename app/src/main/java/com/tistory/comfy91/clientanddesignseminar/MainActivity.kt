@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         main_viewPager.adapter = TabPagerAdapter(supportFragmentManager)
         main_viewPager.offscreenPageLimit = 1
 
@@ -19,5 +18,6 @@ class MainActivity : AppCompatActivity() {
         main_tab.getTabAt(1)!!.setText("전체 카테고리")
 
         nav_view.itemIconTintList = null
+
     }
 }

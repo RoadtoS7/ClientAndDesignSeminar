@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <ScrollView
+<ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
@@ -291,11 +290,11 @@
                 android:id="@+id/img_ad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
                 android:src="@drawable/main_img_ad"
-                app:layout_constraintTop_toBottomOf="@id/tab_container"
-                app:layout_constraintStart_toStartOf="@id/guideline_left"
                 app:layout_constraintEnd_toEndOf="@id/guideline_right"
-                android:layout_marginTop="14dp"/>
+                app:layout_constraintStart_toStartOf="@id/guideline_left"
+                app:layout_constraintTop_toBottomOf="@id/tab_container" />
 
             <ImageView
                 android:id="@+id/img_event"
