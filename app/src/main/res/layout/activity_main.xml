@@ -259,7 +259,7 @@
 
                     <com.google.android.material.tabs.TabItem
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:lineSpacingExtra="7sp"
                         android:text="즐겨찾기"
                         android:textColor="#333333"
