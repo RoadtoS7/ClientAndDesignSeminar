@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SearchActivity"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="196dp">
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:layout_marginTop="23dp"
+            android:background="#f5f5f5"
+            app:layout_constraintBottom_toTopOf="@+id/bestseller"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/bestseller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="14.5dp"
+            android:fontFamily="@font/applesdgothicneob"
+            android:text="인기 셀러"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/bestview"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/allviewer"
+            app:layout_constraintTop_toBottomOf="@+id/line1"
+            android:layout_marginStart="22dp" />
+
+        <ImageView
+            android:id="@+id/allviewer"
+            android:layout_width="66dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="11.5dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/search_btn_all"
+            app:layout_constraintBottom_toTopOf="@+id/bestview"
+            app:layout_constraintLeft_toRightOf="@+id/bestseller"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bestview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginHorizontal="14dp"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/line2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bestseller"
+            tools:listitem="@layout/item_best"/>
+
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:layout_marginBottom="16.5dp"
+            android:layout_marginTop="18dp"
+            android:background="#f5f5f5"
+            app:layout_constraintBottom_toTopOf="@+id/pick"
+            app:layout_constraintTop_toBottomOf="@+id/bestview" />
+
+        <TextView
+            android:id="@+id/pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/applesdgothicneob"
+            android:text="이건 꼭 사야해"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/certification"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+        <ImageView
+            android:id="@+id/certification"
+            android:layout_width="76dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/search_btn_certification_non"
+            android:background="@android:color/transparent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toTopOf="@+id/product"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/star_5"
+            app:layout_constraintTop_toBottomOf="@+id/pick" />
+
+        <ImageView
+            android:id="@+id/star_5"
+            android:layout_width="84dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/search_btn_5_star_non"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/certification"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/certification"
+            app:layout_constraintRight_toLeftOf="@+id/notopen"
+            app:layout_constraintTop_toTopOf="@+id/certification" />
+
+        <ImageView
+            android:id="@+id/notopen"
+            android:layout_width="101dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="76dp"
+            android:src="@drawable/search_btn_notopen_non"
+            android:background="#00000000"
+            app:layout_constraintBottom_toBottomOf="@+id/certification"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/star_5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/certification" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/certification"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:listitem="@layout/item_must"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
