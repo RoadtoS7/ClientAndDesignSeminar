@@ -59,21 +59,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:paddingHorizontal="2dp"
-
                     android:text="패션잡화" />
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:paddingHorizontal="2dp"
-
                     android:text="뷰티" />
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:paddingHorizontal="2dp"
-
                     android:text="출산/유아동" />
 
                 <com.google.android.material.tabs.TabItem

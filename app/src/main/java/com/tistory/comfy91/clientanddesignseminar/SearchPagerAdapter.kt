@@ -9,10 +9,12 @@ public class SearchPagerAdapter(fm: FragmentManager)
     override fun getItem(position: Int): Fragment {
         return when(position){
             0 -> FashionItemFragment()
+            1 -> BeautyFragment()
+            2 -> PregnantFragment()
             else -> FashionItemFragment()
          }
     }
 
-    override fun getCount() = 3
+    override fun getCount() = 4
 
 }

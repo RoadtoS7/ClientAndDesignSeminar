@@ -5,11 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.fragment_fashion_item.*
 
 
-class FashionItemFragment : Fragment() {
+class PregnantFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -20,13 +19,6 @@ class FashionItemFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        setPoplarKeywords()
-        setPopularSeller()
-        setMustBuy()
-
-    }
-
-    private fun setPoplarKeywords(){
         tv_popular_keyword1.text = "# 시계"
         tv_popular_keyword2.text = "# 구찌"
         tv_popular_keyword3.text = "# 코치"
@@ -39,30 +31,11 @@ class FashionItemFragment : Fragment() {
         tv_popular_keyword10.text = "# 프라다"
     }
 
-    private fun setPopularSeller(){
-        activity?.baseContext?.let {
-            Glide.with(it).load(R.drawable.search_img_user1) to imgv_seller1
-            Glide.with(it).load(R.drawable.search_img_user2) to imgv_seller2
-            Glide.with(it).load(R.drawable.search_img_user3) to imgv_seller3
-            Glide.with(it).load(R.drawable.search_img_user4) to imgv_seller4
-
-            Glide.with(it).load(R.drawable.search_ic_silver) to imgv_seller_level1
-            Glide.with(it).load(R.drawable.search_ic_bronze) to imgv_seller_level2
-            Glide.with(it).load(R.drawable.search_ic_gold) to imgv_seller_level3
-            Glide.with(it).load(R.drawable.search_ic_silver) to imgv_seller_level4        }
-    }
-
-    private fun setMustBuy(){
-        activity?.baseContext?.let {
-//            Glide.with(it).load(R.drawable.search_img_product1) to
-        }
-    }
-
     companion object {
 
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            FashionItemFragment().apply {
+            PregnantFragment().apply {
                 arguments = Bundle().apply {
 //                    putString(ARG_PARAM1, param1)
 //                    putString(ARG_PARAM2, param2)
