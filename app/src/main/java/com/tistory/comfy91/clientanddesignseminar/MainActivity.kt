@@ -1,5 +1,6 @@
 package com.tistory.comfy91.clientanddesignseminar
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         main_tab.getTabAt(1)!!.setText("전체 카테고리")
 
         nav_view.itemIconTintList = null
-
+        imgv_btn_search.setOnClickListener {
+            val intent = Intent(this@MainActivity, SearchActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
