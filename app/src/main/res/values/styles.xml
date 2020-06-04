@@ -8,12 +8,27 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextStyle4">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="TextStyle5">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:textColor">#c5c5c5</item>
+    </style>
+
     <style name="TextStyle2">
         <item name="android:textSize">17sp</item>
         <item name="android:letterSpacing">0.03</item>
         <item name="android:lineSpacingExtra">6sp</item>
         <item name="android:textColor">#ffffff</item>
     </style>
+
     <style name="TextStyle">
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textSize">14sp</item>
@@ -21,10 +36,22 @@
         <item name="android:lineSpacingExtra">6sp</item>
         <item name="android:textColor">#333333</item>
     </style>
+
     <style name="TextStyle3">
         <item name="android:textSize">13sp</item>
         <item name="android:letterSpacing">0.05</item>
         <item name="android:lineSpacingExtra">4sp</item>
         <item name="android:textColor">#ffffff</item>
     </style>
+
+    <style name="tv_popular_keyword">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/dusty_orange_two</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="fontFamily">@font/sdgothic_fontfamily</item>
+        <item name="fontWeight">900</item>
+    </style>
+
 </resources>
