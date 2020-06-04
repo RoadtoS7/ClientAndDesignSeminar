@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgv_back"
+            android:layout_width="49dp"
+            android:layout_height="62dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/search_ic_seach"
+            android:fontFamily="@font/sdgothic_fontfamily"
+            android:hint="상품명 혹은 가게를 입력하세요."
+            android:paddingEnd="19dp"
+            android:textCursorDrawable="@color/dusty_orange"
+            android:textFontWeight="400"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgv_back"
+            app:layout_constraintTop_toTopOf="@id/imgv_back" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_serachtab"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/search_tab_border"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_search">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_items"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="@id/imgv_tab_plus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tabIndicatorColor="@color/dusty_orange"
+                app:tabIndicatorFullWidth="false"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/dusty_orange">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="2dp"
+                    android:text="패션잡화" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="2dp"
+                    android:text="뷰티" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="2dp"
+                    android:text="출산/유아동" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="2dp"
+
+                    android:text="노트북/데스크탑" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <ImageView
+                android:id="@+id/imgv_tab_plus"
+                android:layout_width="59dp"
+                android:layout_height="43dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/tab_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_serachtab"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
