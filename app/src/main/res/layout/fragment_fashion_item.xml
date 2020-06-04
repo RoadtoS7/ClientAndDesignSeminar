@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="22dp"
+    tools:context=".FashionItemFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_popular"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:paddingHorizontal="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/tv_keyword"
+                style="@style/TextStyle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:text="인기 키워드"
+                android:textFontWeight="900"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_popular_keyword1"
+                style="@style/tv_popular_keyword"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tag_popular_keyword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_keyword" />
+
+            <TextView
+                android:id="@+id/tv_popular_keyword2"
+                style="@style/tv_popular_keyword"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_popular_keyword"
+                app:layout_constraintStart_toEndOf="@id/tv_popular_keyword1"
+                app:layout_constraintTop_toTopOf="@id/tv_popular_keyword1" />
+
+            <TextView
+                android:id="@+id/tv_popular_keyword3"
+                style="@style/tv_popular_keyword"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_popular_keyword"
+                app:layout_constraintStart_toEndOf="@id/tv_popular_keyword2"
+                app:layout_constraintTop_toTopOf="@id/tv_popular_keyword2" />
+
+            <TextView
+                android:id="@+id/tv_popular_keyword4"
+                style="@style/tv_popular_keyword"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_popular_keyword"
+                app:layout_constraintStart_toEndOf="@id/tv_popular_keyword3"
+                app:layout_constraintTop_toTopOf="@id/tv_popular_keyword3" />
+
+            <TextView
+                android:id="@+id/tv_popular_keyword5"
+                style="@style/tv_popular_keyword"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/tag_popular_keyword"
+                app:layout_constraintStart_toStartOf="@id/tv_popular_keyword1"
+                app:layout_constraintTop_toBottomOf="@id/tv_popular_keyword1" />
+
+            <TextView
+                android:id="@+id/tv_popular_keyword6"
+                style="@style/tv_popular_keyword"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_popular_keyword"
+                app:layout_constraintStart_toEndOf="@id/tv_popular_keyword5"
+                app:layout_constraintTop_toTopOf="@id/tv_popular_keyword5" />
+
+            <TextView
+                android:id="@+id/tv_popular_keyword7"
+                style="@style/tv_popular_keyword"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_popular_keyword"
+                app:layout_constraintStart_toEndOf="@id/tv_popular_keyword6"
+                app:layout_constraintTop_toTopOf="@id/tv_popular_keyword6" />
+
+
+            <TextView
+                android:id="@+id/tv_popular_keyword8"
+                style="@style/tv_popular_keyword"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/tag_popular_keyword"
+                app:layout_constraintStart_toStartOf="@id/tv_popular_keyword5"
+                app:layout_constraintTop_toBottomOf="@id/tv_popular_keyword5" />
+
+            <TextView
+                android:id="@+id/tv_popular_keyword9"
+                style="@style/tv_popular_keyword"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_popular_keyword"
+                app:layout_constraintStart_toEndOf="@id/tv_popular_keyword8"
+                app:layout_constraintTop_toTopOf="@id/tv_popular_keyword8" />
+
+            <TextView
+                android:id="@+id/tv_popular_keyword10"
+                style="@style/tv_popular_keyword"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_popular_keyword"
+                app:layout_constraintStart_toEndOf="@id/tv_popular_keyword9"
+                app:layout_constraintTop_toTopOf="@id/tv_popular_keyword9" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_bestseller"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:paddingHorizontal="22dp"
+            app:layout_constraintStart_toStartOf="@id/layout_popular"
+            app:layout_constraintTop_toBottomOf="@id/layout_popular">
+
+            <TextView
+                android:id="@+id/tv_seller_title"
+                style="@style/TextStyle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:text="인기 셀러"
+                android:textFontWeight="900"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgv_seller1"
+                android:layout_width="59dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@id/tv_seller_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_seller_title" />
+
+            <TextView
+                android:id="@+id/tv_seller1"
+                style="@style/TextStyle"
+                android:layout_width="29dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="6dp"
+                android:text="솝트"
+                app:layout_constraintEnd_toEndOf="@id/imgv_seller1"
+                app:layout_constraintStart_toStartOf="@id/imgv_seller1"
+                app:layout_constraintTop_toBottomOf="@id/imgv_seller1" />
+
+            <ImageView
+                android:id="@+id/imgv_seller_level1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintEnd_toStartOf="@id/tv_seller_level1"
+                app:layout_constraintStart_toStartOf="@id/imgv_seller1"
+                app:layout_constraintTop_toBottomOf="@id/tv_seller1" />
+
+            <TextView
+                android:id="@+id/tv_seller_level1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.07"
+                android:lineSpacingExtra="4sp"
+                android:text="실버 Lv.4"
+                android:textColor="#333333"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@id/imgv_seller1"
+                app:layout_constraintStart_toEndOf="@id/imgv_seller_level1"
+                app:layout_constraintTop_toBottomOf="@id/tv_seller1" />
+
+
+            <ImageView
+                android:id="@+id/imgv_seller2"
+                android:layout_width="59dp"
+                android:layout_height="59dp"
+                app:layout_constraintEnd_toStartOf="@id/imgv_seller3"
+                app:layout_constraintStart_toEndOf="@id/imgv_seller1"
+                app:layout_constraintTop_toTopOf="@id/imgv_seller1" />
+
+            <TextView
+                android:id="@+id/tv_seller2"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="스타벅스"
+                app:layout_constraintEnd_toEndOf="@id/imgv_seller2"
+                app:layout_constraintStart_toStartOf="@id/imgv_seller2"
+                app:layout_constraintTop_toBottomOf="@id/imgv_seller2" />
+
+            <ImageView
+                android:id="@+id/imgv_seller_level2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintEnd_toStartOf="@id/tv_seller_level2"
+                app:layout_constraintStart_toStartOf="@id/tv_seller2"
+                app:layout_constraintTop_toBottomOf="@id/tv_seller2" />
+
+            <TextView
+                android:id="@+id/tv_seller_level2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.07"
+                android:lineSpacingExtra="4sp"
+                android:text="브론즈 Lv.3"
+                android:textColor="#333333"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_seller2"
+                app:layout_constraintStart_toEndOf="@id/imgv_seller_level2"
+                app:layout_constraintTop_toBottomOf="@id/tv_seller2" />
+
+
+            <ImageView
+                android:id="@+id/imgv_seller3"
+                android:layout_width="59dp"
+                android:layout_height="59dp"
+                app:layout_constraintEnd_toStartOf="@id/imgv_seller4"
+                app:layout_constraintStart_toEndOf="@id/imgv_seller2"
+                app:layout_constraintTop_toTopOf="@id/imgv_seller2" />
+
+            <TextView
+                android:id="@+id/tv_seller3"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="엔젤리너스"
+                app:layout_constraintEnd_toEndOf="@id/imgv_seller3"
+                app:layout_constraintStart_toStartOf="@id/imgv_seller3"
+                app:layout_constraintTop_toBottomOf="@id/imgv_seller3" />
+
+            <ImageView
+                android:id="@+id/imgv_seller_level3"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintEnd_toStartOf="@id/tv_seller_level3"
+                app:layout_constraintStart_toStartOf="@id/tv_seller3"
+                app:layout_constraintTop_toBottomOf="@id/tv_seller3" />
+
+            <TextView
+                android:id="@+id/tv_seller_level3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.07"
+                android:lineSpacingExtra="4sp"
+                android:text="골드 Lv.1"
+                android:textColor="#333333"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_seller3"
+                app:layout_constraintStart_toEndOf="@id/imgv_seller_level3"
+                app:layout_constraintTop_toBottomOf="@id/tv_seller3" />
+
+
+            <ImageView
+                android:id="@+id/imgv_seller4"
+                android:layout_width="59dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imgv_seller3" />
+
+            <TextView
+                android:id="@+id/tv_seller4"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="SOPT"
+                app:layout_constraintEnd_toEndOf="@id/imgv_seller4"
+                app:layout_constraintStart_toStartOf="@id/imgv_seller4"
+                app:layout_constraintTop_toBottomOf="@id/imgv_seller4" />
+
+            <ImageView
+                android:id="@+id/imgv_seller_level4"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintEnd_toStartOf="@id/tv_seller_level4"
+                app:layout_constraintStart_toStartOf="@id/tv_seller4"
+                app:layout_constraintTop_toBottomOf="@id/tv_seller4" />
+
+            <TextView
+                android:id="@+id/tv_seller_level4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.07"
+                android:lineSpacingExtra="4sp"
+                android:text="실버 Lv.2"
+                android:textColor="#333333"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_seller4"
+                app:layout_constraintStart_toEndOf="@id/imgv_seller_level4"
+                app:layout_constraintTop_toBottomOf="@id/tv_seller4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:paddingStart="22dp"
+            android:paddingEnd="21dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_bestseller"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/tv_pick"
+                style="@style/TextStyle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:text="이건 꼭 사야해"
+                android:textFontWeight="900"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgv_pick_auth"
+                android:layout_width="76dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@id/tv_pick"
+                app:layout_constraintTop_toBottomOf="@id/tv_pick" />
+
+            <ImageView
+                android:id="@+id/imgv_pick_5star"
+                android:layout_width="84dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="7dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_pick_auth"
+                app:layout_constraintTop_toTopOf="@id/imgv_pick_auth" />
+
+
+            <ImageView
+                android:id="@+id/imgv_pick_unpack"
+                android:layout_width="101dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="7dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_pick_5star"
+                app:layout_constraintTop_toTopOf="@id/imgv_pick_5star" />
+
+            <ImageView
+                android:id="@+id/imgv_product1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@id/imgv_pick_auth"
+                app:layout_constraintTop_toBottomOf="@id/imgv_pick_auth" />
+
+            <ImageView
+                android:id="@+id/imgv_product_auth1"
+                android:layout_width="47dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_product1"
+                app:layout_constraintTop_toTopOf="@id/imgv_product1" />
+
+            <ImageView
+                android:id="@+id/imgv_product_new1"
+                android:layout_width="38dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="3dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_product_auth1"
+                app:layout_constraintTop_toTopOf="@id/imgv_product_auth1" />
+
+            <TextView
+                android:id="@+id/tv_product_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:lineSpacingExtra="6sp"
+                android:maxWidth="214dp"
+                android:text="여성 엘칸토 로퍼 250"
+                android:textColor="#333333"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/imgv_product_auth1"
+                app:layout_constraintTop_toBottomOf="@id/imgv_product_auth1" />
+
+            <TextView
+                android:id="@+id/tv_product_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="7sp"
+                android:text="45,000원"
+                android:textColor="#333333"
+                android:textFontWeight="900"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/tv_product_title1"
+                app:layout_constraintTop_toBottomOf="@id/tv_product_title1" />
+
+            <ImageView
+                android:id="@+id/imgv_product2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@id/imgv_product1"
+                app:layout_constraintTop_toBottomOf="@id/imgv_product1" />
+
+            <ImageView
+                android:id="@+id/imgv_product_auth2"
+                android:layout_width="47dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_product2"
+                app:layout_constraintTop_toTopOf="@id/imgv_product2" />
+
+            <ImageView
+                android:id="@+id/imgv_product_new2"
+                android:layout_width="38dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="3dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_product_auth2"
+                app:layout_constraintTop_toTopOf="@id/imgv_product_auth2" />
+
+            <TextView
+                android:id="@+id/tv_product_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:lineSpacingExtra="6sp"
+                android:maxWidth="214dp"
+                android:text="[패션] 여성용 팬츠 자켓 가디건 봄 신상균일가 F(95) 무료배송"
+                android:textColor="#333333"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/imgv_product_auth2"
+                app:layout_constraintTop_toBottomOf="@id/imgv_product_auth2" />
+
+            <TextView
+                android:id="@+id/tv_product_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="7sp"
+                android:text="45,000원"
+                android:textColor="#333333"
+                android:textFontWeight="900"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/tv_product_title2"
+                app:layout_constraintTop_toBottomOf="@id/tv_product_title2" />
+
+            <ImageView
+                android:id="@+id/imgv_product3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@id/imgv_product2"
+                app:layout_constraintTop_toBottomOf="@id/imgv_product2" />
+
+            <ImageView
+                android:id="@+id/imgv_product_auth3"
+                android:layout_width="47dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_product3"
+                app:layout_constraintTop_toTopOf="@id/imgv_product3" />
+
+            <ImageView
+                android:id="@+id/imgv_product_new3"
+                android:layout_width="38dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="3dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_product_auth3"
+                app:layout_constraintTop_toTopOf="@id/imgv_product_auth3" />
+
+            <TextView
+                android:id="@+id/tv_product_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:lineSpacingExtra="6sp"
+                android:maxWidth="214dp"
+                android:text="여성 엘칸토 로퍼 250"
+                android:textColor="#333333"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/imgv_product_auth3"
+                app:layout_constraintTop_toBottomOf="@id/imgv_product_auth3" />
+
+            <TextView
+                android:id="@+id/tv_product_price3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="7sp"
+                android:text="45,000원"
+                android:textColor="#333333"
+                android:textFontWeight="900"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/tv_product_title3"
+                app:layout_constraintTop_toBottomOf="@id/tv_product_title3" />
+
+
+            <ImageView
+                android:id="@+id/imgv_product4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@id/imgv_product3"
+                app:layout_constraintTop_toBottomOf="@id/imgv_product3" />
+
+            <ImageView
+                android:id="@+id/imgv_product_auth4"
+                android:layout_width="47dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_product4"
+                app:layout_constraintTop_toTopOf="@id/imgv_product4" />
+
+            <ImageView
+                android:id="@+id/imgv_product_new4"
+                android:layout_width="38dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="3dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_product_auth4"
+                app:layout_constraintTop_toTopOf="@id/imgv_product_auth4" />
+
+            <TextView
+                android:id="@+id/tv_product_title4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:lineSpacingExtra="6sp"
+                android:maxWidth="214dp"
+                android:text="[패션] 여성용 팬츠 자켓 가디건 봄 신상균일가 F(95) 무료배송"
+                android:textColor="#333333"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/imgv_product_auth4"
+                app:layout_constraintTop_toBottomOf="@id/imgv_product_auth4" />
+
+            <TextView
+                android:id="@+id/tv_product_price4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="7sp"
+                android:text="45,000원"
+                android:textColor="#333333"
+                android:textFontWeight="900"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/tv_product_title4"
+                app:layout_constraintTop_toBottomOf="@id/tv_product_title4" />
+
+            <ImageView
+                android:id="@+id/imgv_product5"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@id/imgv_product4"
+                app:layout_constraintTop_toBottomOf="@id/imgv_product4" />
+
+            <ImageView
+                android:id="@+id/imgv_product_auth5"
+                android:layout_width="47dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_product5"
+                app:layout_constraintTop_toTopOf="@id/imgv_product5" />
+
+            <ImageView
+                android:id="@+id/imgv_product_new5"
+                android:layout_width="38dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="3dp"
+                app:layout_constraintStart_toEndOf="@id/imgv_product_auth5"
+                app:layout_constraintTop_toTopOf="@id/imgv_product_auth5" />
+
+            <TextView
+                android:id="@+id/tv_product_title5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:lineSpacingExtra="6sp"
+                android:maxWidth="214dp"
+                android:text="여성 엘칸토 로퍼 250"
+                android:textColor="#333333"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/imgv_product_auth5"
+                app:layout_constraintTop_toBottomOf="@id/imgv_product_auth5" />
+
+            <TextView
+                android:id="@+id/tv_product_price5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/sdgothic_fontfamily"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="7sp"
+                android:text="45,000원"
+                android:textColor="#333333"
+                android:textFontWeight="900"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/tv_product_title5"
+                app:layout_constraintTop_toBottomOf="@id/tv_product_title5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

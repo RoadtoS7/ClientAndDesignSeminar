@@ -2,6 +2,7 @@ package com.tistory.comfy91.clientanddesignseminar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.viewpager.widget.ViewPager
 import com.bumptech.glide.Glide
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_main.*
@@ -25,9 +26,9 @@ class MainActivity : AppCompatActivity() {
         tab_viewpager.offscreenPageLimit = 2
 
 
-        tab_viewpager
+        tab_viewpager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tab_items))
 
-        tab_item.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+        tab_items.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabReselected(p0: TabLayout.Tab?) {}
 
             override fun onTabUnselected(p0: TabLayout.Tab?) {}

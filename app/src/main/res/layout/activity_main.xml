@@ -44,7 +44,7 @@
             app:layout_constraintTop_toBottomOf="@id/edt_search">
 
             <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tab_item"
+                android:id="@+id/tab_items"
                 android:layout_width="0dp"
                 android:layout_height="41dp"
                 app:layout_constraintEnd_toEndOf="@id/imgv_tab_plus"
@@ -86,8 +86,7 @@
                 android:layout_width="59dp"
                 android:layout_height="43dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/tab_item"
-                app:layout_constraintTop_toTopOf="@id/tab_item" />
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
